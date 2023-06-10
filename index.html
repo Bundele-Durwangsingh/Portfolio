@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Durwangsingh Bundele</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/eb1e993052.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a> </li>
+                    <li><a href="#about">About</a> </li>
+                    <li><a href="#project">Projects</a> </li>
+                    <li><a href="#contact">Contact</a> </li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="head-text">
+                <div class="scroll-animation">
+                    <p>Hi</p>
+                    <h1>I'm Durwangsingh Bundele,</h1>
+                    <h1>a Backend Developer</h1>
+                </div>
+                <div class="image">
+                    <img src="images/bg.png">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/img1.jpg" class="img1">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="text">About me</h1>
+                    <p>
+                        Hello, my name is Durwangsingh Bundele, and I am currently pursuing my Bachelor's degree in
+                        Information Technology from Mumbai University. As a passionate and ambitious developer, I am
+                        eagerly seeking opportunities to contribute my skills and expertise to an established IT
+                        company.
+                    </p>
+                    <p>
+                        I thrive on challenges and enjoy working with the latest technologies, constantly seeking out
+                        new ideas and exploring innovative solutions. With a natural curiosity and a drive for
+                        continuous improvement, I am always motivated to expand my knowledge and refine my skills in the
+                        ever-evolving world of technology.
+                    </p>
+                    <p>
+                        In one sentence, I would describe myself as a dedicated individual who embraces new ideas and
+                        technologies, and consistently strives for effective execution in all endeavors.
+                    </p>
+                    <div class="tab-title">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('internship')">Internship</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" , id="skills">
+                        <ul>
+                            <li><span>Python</span></li>
+                            <li><span>SQL</span></li>
+                            <li><span>JavaScript</span></li>
+                            <li><span>HTMl/CSS</span></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" , id="internship">
+                        <ul>
+                            <li><span>Tech Ustaad</span><br>Digital Marketing</li>
+                            <li>•Worked on a real-world web development project using
+                                WordPress</li>
+                            <li>•Learned about Digital marking and working of SEO</li>
+                            <li>•Worked on SEO and other digital marketing
+                                parameters</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" , id="education">
+                        <ul>
+                            <li><span>2021-present</span><br>Bachelor of Engineering in Information Technology
+                                St. John College of Engineering and Management, Palghar</li>
+                            <li><span>2017-2021</span><br>Diploma in Computer Engineering
+                                Bhausaheb Vartak Polytechnic College, Vasai
+                                2017-2021</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="project">
+        <div class="container">
+            <h1 class="text">Project</h1>
+            <div class="projectl-list">
+                <div>
+                    <i class="fa-solid fa-heart-pulse"></i>
+                    <h2>Heart disease prediction</h2>
+                    <p>•Developed a machine learning project for heart disease
+                        prediction</p>
+                    <p>• Utilized HTML/CSS for the frontend and Python with Flask for the
+                        backend</p>
+                    <p>• Demonstrated the ability to link both components effectively</p>
+                    <a href="https://github.com/Bundele-Durwangsingh/Heart-disease-prediction-">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-sharp fa-solid fa-book"></i>
+                    <h2>Library Management System</h2>
+                    <p> •Created a full-stack project using Java
+                    </p>
+                    <p>• Developed the frontend and backend components</p>
+                    <p>• Utilized SQL for database management</p>
+                    <a href="https://github.com/Bundele-Durwangsingh/library-managment-useing-java-and-sql">Learn
+                        more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Online ide</h2>
+                    <p> • Developed an online Integrated Development Environment (IDE) using HTML, CSS, and JavaScript.
+                    </p>
+                    <p>• Implemented a code file downloading feature to allow users to save their code.</p>
+                    <p>• Incorporated compiler support for languages such as C, C++, Python, and PHP.</p>
+                    <a href="https://github.com/Bundele-Durwangsingh/online-ide">Learn
+                        more</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="text">Contact Me</h1>
+                    <p><i class="fa-regular fa-envelope"></i> bundeledurwang@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> 9834101715</p>
+                    <div class="social-icon">
+                        <a href="https://www.linkedin.com/in/bundele-durwangsingh/"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/Bundele-Durwangsingh"><i class="fa-brands fa-github"></i></i></a>
+                    </div>
+                    <a href="resume.pdf" download class="btn btn2">Download My resume</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your messsage"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontens = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabconten of tabcontens) {
+                tabconten.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemeu = document.getElementById("sidemenu");
+        function openmenu() {
+            sidemeu.style.right = "0";
+        }
+        function closemenu() {
+            sidemeu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbw2m7BuaGUo2D45z-GIdSASz27zbzhdw2B14NSkIX6Ws5MUKoxwm9tB94tgeRumJT3A/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Thank you your details has be recorded"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+
+</html>
