@@ -29,7 +29,7 @@
                     <h1>I'm Durwangsingh Bundele,</h1>
                     <h1>a Backend Developer</h1>
                 </div>
-                <div class="image">
+                <div class="scroll-animation">
                     <img src="images/bg.png">
                 </div>
             </div>
@@ -75,12 +75,9 @@
                     </div>
                     <div class="tab-contents" , id="internship">
                         <ul>
-                            <li><span>Tech Ustaad</span><br>Digital Marketing</li>
-                            <li>•Worked on a real-world web development project using
-                                WordPress</li>
-                            <li>•Learned about Digital marking and working of SEO</li>
-                            <li>•Worked on SEO and other digital marketing
-                                parameters</li>
+                            <li><span>Tech Ustaad(6 week)</span><br>Digital Marketing</li>
+                            <li><span>Intern pe(4 week)</span><br>Python programing</li>
+                            <li><span>Oasis infobyte(4 week)</span><br>Data analysis</li>
                         </ul>
                     </div>
                     <div class="tab-contents" , id="education">
@@ -201,6 +198,31 @@
                 })
                 .catch(error => console.error('Error!', error.message))
         })
+    </script>
+    <script>
+        const scrollAnimations = document.querySelectorAll('.scroll-animation');
+
+        const scrollOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.5, // Change this threshold value as needed (0.5 means 50% of the element should be visible)
+        };
+
+        const scrollObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.animation = 'scrollReveal 2s';
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, scrollOptions);
+
+        scrollAnimations.forEach(animation => {
+            animation.style.opacity = '0';
+            scrollObserver.observe(animation);
+        });
+
     </script>
 </body>
 
