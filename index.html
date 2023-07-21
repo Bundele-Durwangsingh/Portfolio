@@ -202,26 +202,27 @@
     <script>
         const scrollAnimations = document.querySelectorAll('.scroll-animation');
 
-        const scrollOptions = {
-            root: null,
-            rootMargin: '0px',
-            threshold: 0.5, // Change this threshold value as needed (0.5 means 50% of the element should be visible)
-        };
+const scrollOptions = {
+    root: null,
+    rootMargin: '0px',
+    threshold: 0.5, // Change this threshold value as needed (0.5 means 50% of the element should be visible)
+};
 
-        const scrollObserver = new IntersectionObserver((entries, observer) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.opacity = '1';
-                    entry.target.style.animation = 'scrollReveal 2s';
-                    observer.unobserve(entry.target);
-                }
-            });
-        }, scrollOptions);
+const scrollObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.style.opacity = '1';
+            entry.target.style.animation = 'scrollReveal 2s';
+            observer.unobserve(entry.target);
+        }
+    });
+}, scrollOptions);
 
-        scrollAnimations.forEach(animation => {
-            animation.style.opacity = '0';
-            scrollObserver.observe(animation);
-        });
+scrollAnimations.forEach(animation => {
+    animation.style.opacity = '0';
+    scrollObserver.observe(animation);
+});
+
 
     </script>
 </body>
